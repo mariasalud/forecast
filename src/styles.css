@@ -1,6 +1,6 @@
 body {
-    font-family: "Segoe UI", "Segoe WP", Arial, sans-serif
-    
+    font-family: Arial, sans-serif;
+   
 }
  h1 {
     color: black;
@@ -22,12 +22,19 @@ li {
     font-weight: 100;
     line-height: 19px;
 }
-.weather-app {
+.weather-app-wrapper {
     max-width: 500px;
-    height: 500px;
     margin:30px auto;
+}
+.weather-app {
+    height: 500px;
     padding:20px;
     border:1px solid #d9dad7;
     border-radius: 5px;
 }
-        
+.overview {
+    margin-bottom: 20px;
+}
+.weather-temperature img {
+    margin-right: 20px;
+}

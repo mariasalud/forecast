@@ -13,10 +13,10 @@
     <title>Forecast</title>
 </head>
 <body>
-
-    <div class="container">
+<div class="container">
+        <div class="weather-app-wrapper">
         <div class="weather-app">
-            
+        <div class="overview">
     <h1>
         New York
     </h1>
@@ -28,11 +28,19 @@
         rainy
     </li>
 </ul>
+</div>
 <div class="row">
     <div class="col-6">
-<img src="https://assets.msn.com/bundles/v1/weather/latest/ModerateRainV2.svg" alt="rainy" />
-12 °C | °F
+        <div class="clearfix weather-temperature">
+    <img src="https://assets.msn.com/bundles/v1/weather/latest/ModerateRainV2.svg"
+     alt="rainy" 
+      class="float-left" 
+      />
+    <div class="float-left">
+         12 °C | °F
     </div>
+    </div>
+</div>
 <div class="col-6">
 <ul>
     <li>
@@ -47,10 +55,11 @@
 </ul>
 </div>
 </div>
+</div>
     <small>
-      Created by:Maria Garcia  <a href="https://github.com/mariasalud/forecast" target="_blank">Open-source code</a>
+      Created by:Maria Garcia  <a href="https://github.com/mariasalud/forecast"
+       target="_blank">Open-source code</a>
     </small>
-    
     </div>
     </div>
     <script src="src/index.js"></script>
