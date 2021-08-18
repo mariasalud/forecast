@@ -19,40 +19,29 @@
         <div class="weather-app-wrapper">
         <div class="weather-app">
 
-        <form 
-        id="search-form" class="mb-0">
-        <div class="row">
-
-         <div class="col-9">
-
-        <input
+    <form 
+         id="search-form" >
+        
+    <input
         type="search"
         placeholder="Type a city"
         class="form-control"
         autocomplete="off"
         autofocus="on"
         id="city-input" />
-        </div>
-
-        <div class="col-3">
+        
+        
 
         <input 
         type="submit"
         class="btn btn-primary"
         value="Search" />
 
-        <button
-        type="button"
-        class="btn btn-success"
-        id="current-location">
-        Current 📍
-    </button>
-   </div>
-  </div>
-</form>
-
-
-        <div class="overview">
+    
+   
+  
+    </form>
+   <div class="overview">
     <h1 id="city"> New York </h1>
 <ul>
     <li id="date">5:00</li>
@@ -66,7 +55,9 @@
     <div class="float-left">
         <strong id="temperature"> 12 </strong>
         <span class="units">
-             <a href="#"> °C </a> | <a href="#"> °F </a></span>
+             <a href="#" id="celsius-link" class="active"> °C </a> |
+             <a href="#" id="fahrenheit-link"> °F </a>
+        </span>
     </div>
   </div>
 </div>
