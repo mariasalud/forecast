@@ -22,6 +22,7 @@ let dayIndex = currentTime.getDay();
     return '${day} ${hours}:${minutes}';
 }
 
+
 function displayTemperature(response) {
     let temperatureElement = document.querySelector("#temperature");
     let cityElement = document.querySelector("#city");
@@ -36,7 +37,7 @@ function displayTemperature(response) {
     descriptionElement.innerHTML = response.data.weather[0].description;
     windElement.innerHTML = Math.round(response.data.wind.speed);
     humidityElement.innerHTML = response.data.main.humidity;
-    dateElement.innerHTML = formatData(currentTime * 1000);
+    dateElement.innerHTML = formatData(new Date());
     iconElement.setAttribute(
         "src",
         'http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png'
