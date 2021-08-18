@@ -42,11 +42,12 @@ function displayTemperature(response) {
         "src",
         'http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png'
         );
+        icnonElement.setAttribute("alt", response.data.weather[0].description; )
  }
  
  function searchCity(city) {
  let apiKey = "77d7aad521d071522cc04f7e20b8ab63";
- let city ="Paris";
+ let city ="New York";
  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
  axios.get(apiUrl).then(displayTemperature);
