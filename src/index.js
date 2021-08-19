@@ -1,5 +1,5 @@
 function formatData(timestamp) {
-    let currentTime = newDate(timestamp);
+    let currentTime = new Date(timestamp);
     let hours = currentTime.getHours();
     if (hours< 10) {
     hours = '0${hours}';
@@ -20,8 +20,8 @@ function formatData(timestamp) {
     ];
     let day = days[dayIndex];
     return '${day}${hours}:${minutes}';
+    
 }
-
 
 function displayTemperature(response) {
     let temperatureElement = document.querySelector("#temperature");
@@ -39,12 +39,12 @@ function displayTemperature(response) {
     descriptionElement.innerHTML = response.data.weather[0].description;
     windElement.innerHTML = Math.round(response.data.wind.speed);
     humidityElement.innerHTML = response.data.main.humidity;
-    dateElement.innerHTML = formatData(newDate());
+    dateElement.innerHTML = formatData(new Date());
     iconElement.setAttribute(
         "src",
         'http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png'
-        );
-        iconElement.setAttribute("alt", response.data.weather[0].description);
+        ); 
+          iconElement.setAttribute("alt", response.data.weather[0].description);
  }
  
 function search(city) {
