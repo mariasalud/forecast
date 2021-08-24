@@ -67,54 +67,19 @@ cursor:default;
 .weather-temperature .active:hover {
 text-decoration:none;
 }
-.class-sun{
-    position: relative;
-    top:-60px;
-    left:-40px;
-    font-size: 50px;
-    color:#ffc93c;
+.weather-forecast {
+    margin-top:20px;
+    text-align: center;
+    color: #000;
 }
-.class-tuesday {
-    position: relative;
-    right:-100px;
-    top:-204px;
+.weather-forecast-date {
+    font-size:16px;
+    opacity:0.5;
 }
-.class-showers {
-    position:relative;
-    top:-60px;
-    left: -40px;
-    font-size: 50px;
+.weather-forecast-temperature {
+font: size 13px;
 }
-.class-wednesday {
-    position: relative;
-    right:-200px;
-    top:-410px;
-}
-.class-storm {
-     position:relative;
-    top:-60px;
-    left: -40px;
-    font-size: 50px;
-}
-.class-thursday {
-    position: relative;
-    right:-300px;
-    top:-615px;
-}
-.class-friday {
-    position: relative;
-    right:-400px;
-    top:-822px;
-}
-.class-saturday {
-    position: relative;
-    right:-500px;
-    top:-1025px;
-}
-.class-cloudy {
- position:relative;
-    top:-60px;
-    left: -40px;
-    font-size: 50px;
-color:#ffc93c;
+.weather-forecast-temperature-min {
+    opacity: 0.5;
+
 }
