@@ -57,7 +57,7 @@ width:64px;
 .weather-temperature .units {
     position:relative;
     font-size:16px;
-    right:-60px;
+    right:-70px;
     top:-100px;
 }
 .weather-temperature .active {
@@ -76,7 +76,7 @@ text-decoration:none;
     font-size:16px;
     opacity:0.5;
 }
-.weather-forecast-temperature {
+.weather-forecast-temperatures {
 font: size 13px;
 }
 .weather-forecast-temperature-min {
