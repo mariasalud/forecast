@@ -3,7 +3,7 @@ body {
     
 }
  h1 {
-    color: black;
+    color:black;
     font-size: 24px;
     line-height: 28px;
     font-weight: 100px;
@@ -68,7 +68,7 @@ cursor:default;
 text-decoration:none;
 }
 .weather-forecast {
-    margin-top:5px;
+    margin-top:15px;
     text-align: center;
     color: #000;
 }
@@ -78,7 +78,7 @@ text-decoration:none;
     opacity:0.5;
 }
 .weather-forecast-temperatures {
-font: size 13px;
+font-size: 16px;
 }
 .weather-forecast-temperature-min {
     opacity: 0.5;
